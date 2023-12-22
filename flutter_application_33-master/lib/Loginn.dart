@@ -43,191 +43,191 @@ class _signupState extends State<signup> {
 
 
 
- Future<Shrio> EntoTp() async {
- String emailController,
- passwordController;
-print("jjjjjjjjjjnnnnnnn");
-      // print(data6['userdata']['photo']);
-  // print("jkkkkkjjkkjkjkjkjkj//////////////////////////...${spgg}");
-  // print(Prrofi.fromJson(data5).userdata.firstname);
-  // print("......tjid.......${data5['userdata']['username']}");
-   var response = await https.post(
-    Uri.parse('https://flutter-api-a4y8j.ondigitalocean.app/auth/login'),
-       body: {
+//  Future<Shrio> EntoTp() async {
+//  String emailController,
+//  passwordController;
+// print("jjjjjjjjjjnnnnnnn");
+//       // print(data6['userdata']['photo']);
+//   // print("jkkkkkjjkkjkjkjkjkj//////////////////////////...${spgg}");
+//   // print(Prrofi.fromJson(data5).userdata.firstname);
+//   // print("......tjid.......${data5['userdata']['username']}");
+//    var response = await https.post(
+//     Uri.parse('https://flutter-api-a4y8j.ondigitalocean.app/auth/login'),
+//        body: {
 
-      "email": "bandanasatpthy435@.com",
-      "password": "bandana234",
-    },
-    headers: <String, String>{
-      // 'Cookie': '__cf_bm=LOuq6pGu4XYxNizq8XFWz7Mv_zbFZf4NUVUphQAsQLQ-1703168941-1-AUVfC1El5GW/Ta6ALS94YcFHEMm3joYULQGYEw0FApYY1CytE4PAffQSaEJWM2UtoUN0WDJ7Sx5HaeGPrsBHfHc=',
-      // HttpHeaders.contentTypeHeader: 'application/json',
-      "Content-Type": "application/json",
-      'Content-Length' : '<calculated when request is sent>',
-      'Host' : '<calculated when request is sent>',
-      'User-Agent' : 'PostmanRuntime/7.36.0',
-      'Accept' : '*/*',
-      'Accept-Encoding' : 'gzip, deflate, br',
-      'Connection' : 'keep-alive',
- 
-    },
-   
-  );
-  print("object");
-  print(response.body);
-  if (response.statusCode == 200) {
-          data1 = jsonDecode(response.body.toString());
-   print("this is called${data1}");
-      // print("jnnjnjnnj${Prrofi.fromJson(data6).userdata.email}");
-      // print("rrrrrrrrrrrrrrr......${data6['userdata']['firstname']}");
-    return Shrio.fromJson(json.decode(response.body));
-  } else {
-    // If the response was umexpected, throw an error.
-    throw Exception('Failed to load post');
-  }
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  Future<Shrio?> EntoTp(  
-//     String emailController,
-//        passwordController,
-//   ) async {
-// print("shriom kalam svae mobno datb...");
-//     try {
-//       print("jjjjjj");
-//       var uri = Uri.parse("https://flutter-api-a4y8j.ondigitalocean.app/auth/login");
-//       print("object");
-//       var request = https.MultipartRequest('POST', uri);
-//       print("objectkkkk");
-//          request.fields['email'] = "bandanasatpthy435@.com";
-//       request.fields['password'] = "bandana234";
-//   request.headers.addAll({
+//       "email": "bandanasatpthy435@.com",
+//       "password": "bandana234",
+//     },
+//     headers: <String, String>{
 //       // 'Cookie': '__cf_bm=LOuq6pGu4XYxNizq8XFWz7Mv_zbFZf4NUVUphQAsQLQ-1703168941-1-AUVfC1El5GW/Ta6ALS94YcFHEMm3joYULQGYEw0FApYY1CytE4PAffQSaEJWM2UtoUN0WDJ7Sx5HaeGPrsBHfHc=',
-//       // 'Access-Control-Allow-Origin': '*',
-//       // 'Content-Type': 'application/json',
-//       // 'Content-Length' : '<calculated when request is sent>',
-//       // 'Host' : '<calculated when request is sent>',
-//       // 'User-Agent' : 'PostmanRuntime/7.36.0',
-//       // 'Accept' : '*/*',
-//       // 'Accept-Encoding' : 'gzip, deflate, br',
-//       // 'Connection' : 'keep-alive',
+//       // HttpHeaders.contentTypeHeader: 'application/json',
+//       "Content-Type": "application/json",
+//       'Content-Length' : '<calculated when request is sent>',
+//       'Host' : '<calculated when request is sent>',
+//       'User-Agent' : 'PostmanRuntime/7.36.0',
+//       'Accept' : '*/*',
+//       'Accept-Encoding' : 'gzip, deflate, br',
+//       'Connection' : 'keep-alive',
+ 
+//     },
+   
+//   );
+//   print("object");
+//   print(response.body);
+//   if (response.statusCode == 200) {
+//           data1 = jsonDecode(response.body.toString());
+//    print("this is called${data1}");
+//       // print("jnnjnjnnj${Prrofi.fromJson(data6).userdata.email}");
+//       // print("rrrrrrrrrrrrrrr......${data6['userdata']['firstname']}");
+//     return Shrio.fromJson(json.decode(response.body));
+//   } else {
+//     // If the response was umexpected, throw an error.
+//     throw Exception('Failed to load post');
+//   }
+  
+// }
 
-//     "Access-Control-Allow-Origin": "*", // Required for CORS support to work
-//       "Access-Control-Allow-Credentials":
-//           'true', // Required for cookies, authorization headers with HTTPS
-//       "Access-Control-Allow-Headers":
-//           "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale",
-//       "Access-Control-Allow-Methods": "POST, OPTIONS"
 
 
-//       });
 
-// print("rahul;;;;;;;");
-//       var response = await request.send();
-//       print("sanjaaaaaa");
-//       var responsed = await https.Response.fromStream(response);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Future<Shrio?> EntoTp(  
+    String emailController,
+       passwordController,
+  ) async {
+print("shriom kalam svae mobno datb...");
+    try {
+      print("jjjjjj");
+      var uri = Uri.parse("https://flutter-api-a4y8j.ondigitalocean.app/auth/login");
+      print("object");
+      var request = https.MultipartRequest('POST', uri);
+      print("objectkkkk");
+         request.fields['email'] = "bandanasatpthy435@.com";
+      request.fields['password'] = "bandana234";
+  request.headers.addAll({
+      // 'Cookie': '__cf_bm=LOuq6pGu4XYxNizq8XFWz7Mv_zbFZf4NUVUphQAsQLQ-1703168941-1-AUVfC1El5GW/Ta6ALS94YcFHEMm3joYULQGYEw0FApYY1CytE4PAffQSaEJWM2UtoUN0WDJ7Sx5HaeGPrsBHfHc=',
+      // 'Access-Control-Allow-Origin': '*',
+      // 'Content-Type': 'application/json',
+      // 'Content-Length' : '<calculated when request is sent>',
+      // 'Host' : '<calculated when request is sent>',
+      // 'User-Agent' : 'PostmanRuntime/7.36.0',
+      // 'Accept' : '*/*',
+      // 'Accept-Encoding' : 'gzip, deflate, br',
+      // 'Connection' : 'keep-alive',
+
+    "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+      "Access-Control-Allow-Credentials":
+          'true', // Required for cookies, authorization headers with HTTPS
+      "Access-Control-Allow-Headers":
+          "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale",
+      "Access-Control-Allow-Methods": "POST, OPTIONS"
+
+
+      });
+
+print("rahul;;;;;;;");
+      var response = await request.send();
+      print("sanjaaaaaa");
+      var responsed = await https.Response.fromStream(response);
      
-//       print("musssssssss");
-//       data1 = json.decode(responsed.body.toString());
+      print("musssssssss");
+      data1 = json.decode(responsed.body.toString());
     
-//       // print(Responsedata);
-// print("hii");
-// print(data1);
-//       if (response.statusCode == 200) {
-//       print(data1);
-//         //  data2 = Responsedata['response'];
-//         //  oTTp =  Responsedata["otp"].toString();
-//         //  print(Responsedata["otp"]);
-//         //  print("object");
-//         //   mobbbb =  data1['mobile'];
-//         // otpppp =  data1['otp'];
+      // print(Responsedata);
+print("hii");
+print(data1);
+      if (response.statusCode == 200) {
+      print(data1);
+        //  data2 = Responsedata['response'];
+        //  oTTp =  Responsedata["otp"].toString();
+        //  print(Responsedata["otp"]);
+        //  print("object");
+        //   mobbbb =  data1['mobile'];
+        // otpppp =  data1['otp'];
 
-//           //                               Navigator.push(
-//           //     context,
-//           //     MaterialPageRoute(builder: (context) => Loginsucess()),
-//           //   );
-//           //                      final snackBar = SnackBar(
-//           //   content:  Text(msgg),
-//           //   action: SnackBarAction(
-//           //     label: 'Undo',
-//           //     onPressed: () {
-//           //       // Some code to undo the change.
-//           //     },
-//           //   ),
-//           // );
+          //                               Navigator.push(
+          //     context,
+          //     MaterialPageRoute(builder: (context) => Loginsucess()),
+          //   );
+          //                      final snackBar = SnackBar(
+          //   content:  Text(msgg),
+          //   action: SnackBarAction(
+          //     label: 'Undo',
+          //     onPressed: () {
+          //       // Some code to undo the change.
+          //     },
+          //   ),
+          // );
 
-//           // Find the ScaffoldMessenger in the widget tree
-//           // and use it to show a SnackBar.
-//           // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          // Find the ScaffoldMessenger in the widget tree
+          // and use it to show a SnackBar.
+          // ScaffoldMessenger.of(context).showSnackBar(snackBar);
       
 
              
 
         
-//           // // Find the ScaffoldMessenger in the widget tree
-//           // // and use it to show a SnackBar.
-//           // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          // // Find the ScaffoldMessenger in the widget tree
+          // // and use it to show a SnackBar.
+          // ScaffoldMessenger.of(context).showSnackBar(snackBar);
 
 
-//         // print(rana);
-//         // print("hello raj ki sadi ${rana}");
-//         // print(request.fields);
-//         // print("hello raj ho ${rajj}");
-//         // Navigator.pushNamed(
-//         //     context, '/ElectricSuccesfuly');
-//         // showDialog(
-//         //     useRootNavigator: true,
-//         //     context: context,
-//         //     builder: (BuildContext context) {
-//         //       return CleaningSuccesfuly();
-//         //     });
-//         // tata(rana.toString());
-//         // Navigator.push(
-//         //   context,
-//         //   MaterialPageRoute(
-//         //       builder: (context) =>
-//         //           const ElectricSuccesfuly(),
-//         //       maintainState: true),
-//         // );
-//         print(data1['otp']);
-//         // print(data['response']['services'][0]['sub_service_name']);
-//         print(data1);
-//       } else {
-//         print("error");
-//         // print(rajj);
-//       }
-//     } catch (err) {
-//       print(err);
-//       return null;
-//     }
-//   }
+        // print(rana);
+        // print("hello raj ki sadi ${rana}");
+        // print(request.fields);
+        // print("hello raj ho ${rajj}");
+        // Navigator.pushNamed(
+        //     context, '/ElectricSuccesfuly');
+        // showDialog(
+        //     useRootNavigator: true,
+        //     context: context,
+        //     builder: (BuildContext context) {
+        //       return CleaningSuccesfuly();
+        //     });
+        // tata(rana.toString());
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(
+        //       builder: (context) =>
+        //           const ElectricSuccesfuly(),
+        //       maintainState: true),
+        // );
+        print(data1['otp']);
+        // print(data['response']['services'][0]['sub_service_name']);
+        print(data1);
+      } else {
+        print("error");
+        // print(rajj);
+      }
+    } catch (err) {
+      print(err);
+      return null;
+    }
+  }
 
 
 
