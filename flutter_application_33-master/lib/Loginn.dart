@@ -332,7 +332,9 @@ print(data1);
                   child: GestureDetector(
                     onTap: () {
                          EntoTp(    
-                         
+                         emailController.text.toString(),
+                         passwordController.text.toString()
+
                          );
                       print("rady");
                       // print("hello raj${emailController.text.toString()}");
